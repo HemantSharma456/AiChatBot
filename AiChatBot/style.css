@@ -1,0 +1,146 @@
+/*body{*/
+/*    background-color: #10b0ff;*/
+/*}*/
+/*.container{*/
+/*    background-color: white;*/
+/*    align-items: center;*/
+/*    margin:100px auto;*/
+/*    padding: 150px 150px;*/
+/*    width: 10%;*/
+/*    max-width: 50px;*/
+/*    border-radius: 15px;*/
+/*    height: 220px;*/
+/*    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+/*    position: relative;*/
+/*}*/
+/*#input{*/
+/*    width: 260px;*/
+/*    padding: 10px;*/
+/*    position: absolute;*/
+/*    bottom: 10px;*/
+/*    left: 10px;*/
+/*    margin-top: 0;*/
+/*    display: block;*/
+/*    border: 1px solid black;*/
+/*    font-style: oblique;*/
+/*    font-family: "Dubai",sans-serif;*/
+/*    font-size: 13.5px;*/
+/*}*/
+/*#input::placeholder{*/
+/*    font-size: 20px;*/
+/*    margin-top: 5px;*/
+/*}*/
+/*#btn{*/
+/*    position: absolute;*/
+/*    bottom: 10px;*/
+/*    right: 10px;*/
+/*    margin-top: 0;*/
+/*    display: block;*/
+/*    padding: 12px;*/
+/*    border: 1px solid black;*/
+/*    cursor: pointer;*/
+/*}*/
+/*#btn:hover{*/
+/*    background-color: pink;*/
+/*}*/
+/*.user{*/
+/*    text-align: right;*/
+/*    margin: 5px;*/
+/*    color: #2563eb;*/
+/*}*/
+/*.bot{*/
+/*    text-align: left;*/
+/*    margin: 5px;*/
+/*    color: #10b981;*/
+/*}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #00bfff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("bg2.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    max-height: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+#reply {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user, .bot {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+}
+
+.user {
+    background-color: #d1e7ff;
+    align-self: flex-end;
+    color: #003366;
+    font-weight: bold;
+}
+
+.bot {
+    background-color: #e2ffe1;
+    align-self: flex-start;
+    color: #006600;
+}
+
+form {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff8c00;
+}
+
